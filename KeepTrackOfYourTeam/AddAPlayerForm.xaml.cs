@@ -31,7 +31,33 @@ namespace KeepTrackOfYourTeam
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            //opslaan van de data
+            AddPlayer();
+        }
+
+        private void AddPlayer()
+        {
+            if (TextBoxLastName.Text != string.Empty && TextBoxAdres.Text != string.Empty)
+            {
+                using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
+                using (var sqlCommand = connection.CreateCommand())
+                {
+                    var LastNameParameter = sqlCommand.Parameters.AddWithValue("@LastName", TextBoxLastName.Text);
+                    var AdresParameter = sqlCommand.Parameters.AddWithValue("@Adres", TextBoxAdres.Text);
+                    var CityParameter = sqlCommand.Parameters.AddWithValue("@City", TextBoxCity.Text);
+                    var BirthDateParameter = sqlCommand.Parameters.AddWithValue("@BirthDate", DatePickerBirthDate.Text);
+
+                    sqlCommand.CommandText =
+                        $@"INSERT INTO [dbo].[Person]
+                    ([LastName], [Adres], [City], [BirthDate])
+                    VALUES ({LastNameParameter.ParameterName}, {AdresParameter.ParameterName}, {CityParameter.ParameterName}, {BirthDateParameter.ParameterName})";
+                    sqlCommand.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Success!", "", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.Close();
+            }
+            else
+                MessageBox.Show("Veld mag niet leeg zijn!", "Velden moeten gevuld zijn", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

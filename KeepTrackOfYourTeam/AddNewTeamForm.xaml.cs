@@ -59,7 +59,7 @@ namespace KeepTrackOfYourTeam
                     sqlCommand.CommandText =
                         $@"INSERT INTO [dbo].[Team]
                     ([Name], [CoachId], [Points])
-                    VALUES ({teamNameParameter.ParameterName}, {teamCoachParameter}, {TeamPointsParameter})";
+                    VALUES ({teamNameParameter.ParameterName}, {teamCoachParameter.ParameterName}, {TeamPointsParameter.ParameterName})";
                     sqlCommand.ExecuteNonQuery();
                 }
 
