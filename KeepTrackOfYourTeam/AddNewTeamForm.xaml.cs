@@ -39,5 +39,35 @@ namespace KeepTrackOfYourTeam
         {
             this.Close();
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            AddTeam();
+        }
+
+        private void AddTeam()
+        {
+            if (TextBoxName.Text != string.Empty && TextBoxCoach.Text != string.Empty)
+            {
+                using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
+                using (var sqlCommand = connection.CreateCommand())
+                {
+                    var teamNameParameter = sqlCommand.Parameters.AddWithValue("@Name", TextBoxName.Text);
+                    var teamCoachParameter = sqlCommand.Parameters.AddWithValue("@CoachId", TextBoxCoach.Text);
+                    var TeamPointsParameter = sqlCommand.Parameters.AddWithValue("@Points", TextBoxPoints.Text);
+
+                    sqlCommand.CommandText =
+                        $@"INSERT INTO [dbo].[Team]
+                    ([Name], [CoachId], [Points])
+                    VALUES ({teamNameParameter.ParameterName}, {teamCoachParameter}, {TeamPointsParameter})";
+                    sqlCommand.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Success!", "", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.Close();
+            }
+            else
+                MessageBox.Show("Veld mag niet leeg zijn!", "Velden moeten gevuld zijn", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

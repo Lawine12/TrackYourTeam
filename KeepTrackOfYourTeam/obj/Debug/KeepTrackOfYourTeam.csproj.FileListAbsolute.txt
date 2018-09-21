@@ -19,3 +19,6 @@ C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\Ad
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\AddAPlayerForm.baml
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\ViewTeamsForm.g.cs
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\ViewTeamsForm.baml
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\bin\Debug\TrackYourTeamDatabase.mdf
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\bin\Debug\TrackYourTeamDatabase_log.ldf
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam_Content.g.cs

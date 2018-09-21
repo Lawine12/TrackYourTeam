@@ -16,6 +16,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="146,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="City" HorizontalAlignment="Left" Margin="75,129,0,0" VerticalAlignment="Top"/>
         <Button Content="Close" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,379,0,0" Width="100" Click="Close_Click"/>
+        <Button Content="Save" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="682,379,0,0" Width="100" Click="Save_Click"/>
 
     </Grid>
 </Window>

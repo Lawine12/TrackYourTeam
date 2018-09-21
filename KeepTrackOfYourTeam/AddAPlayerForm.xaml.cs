@@ -28,5 +28,10 @@ namespace KeepTrackOfYourTeam
         {
             this.Close();
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            //opslaan van de data
+        }
     }
 }

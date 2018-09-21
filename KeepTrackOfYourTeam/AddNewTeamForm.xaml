@@ -9,12 +9,15 @@
     <Grid>
         <Label HorizontalAlignment="Left" Margin="57,86,0,0" VerticalAlignment="Top"/>
         <Label Content="Coach" HorizontalAlignment="Left" Margin="68,120,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="116,95,0,0" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="116,123,0,0" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="116,95,0,0" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TextBoxCoach" HorizontalAlignment="Left" Height="23" Margin="116,123,0,0" Text="" VerticalAlignment="Top" Width="120"/>
         <Button Content="Add a Player" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="116,60,0,0" Width="100" Click="AddAPlayer_Click"/>
         <Label Content="Or select a player from the list to add to the team" HorizontalAlignment="Left" Margin="257,64,0,0" VerticalAlignment="Top"/>
         <ComboBox HorizontalAlignment="Left" Margin="534,68,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="69,94,0,0" VerticalAlignment="Top"/>
         <Button Content="Close" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,379,0,0" Width="100" Click="Close_Click"/>
+        <Button Content="Save" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="682,379,0,0" Width="100" Click="Save_Click"/>
+        <Label Content="Points" HorizontalAlignment="Left" Margin="69,148,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxPoints" HorizontalAlignment="Left" Height="23" Margin="116,151,0,0" Text="" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

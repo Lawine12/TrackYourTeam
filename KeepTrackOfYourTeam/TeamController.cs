@@ -30,7 +30,7 @@ namespace KeepTrackOfYourTeam
     {
         public int Id { get; set; }
 
-        public string Positie { get; set; }
+        public string Position { get; set; }
 
         public int PersonId { get; set; }
 
@@ -46,5 +46,11 @@ namespace KeepTrackOfYourTeam
         public string LastName { get; set; }
 
         public string Adres { get; set; }
+
+        public string City { get; set; }
+
+        public DateTime BirthDate { get; set; }
+
+
     }
 }
