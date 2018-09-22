@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KeepTrackOfYourTeam"
         mc:Ignorable="d"
         Title="Add A Player" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF99A3B0">
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="75,67,0,0" VerticalAlignment="Top"/>
         <Label Content="Adres" HorizontalAlignment="Left" Margin="75,98,0,0" VerticalAlignment="Top"/>
         <TextBox Name="TextBoxLastName" HorizontalAlignment="Left" Height="23" Margin="146,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
@@ -15,8 +15,16 @@
         <Label Content="Birth date" HorizontalAlignment="Left" Margin="75,157,0,0" VerticalAlignment="Top"/>
         <TextBox Name="TextBoxCity" HorizontalAlignment="Left" Height="23" Margin="146,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="City" HorizontalAlignment="Left" Margin="75,129,0,0" VerticalAlignment="Top"/>
-        <Button Content="Close" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,379,0,0" Width="100" Click="Close_Click"/>
-        <Button Content="Save" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="682,379,0,0" Width="100" Click="Save_Click"/>
+        <Button Content="Close" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,379,0,0" Width="100" Click="Close_Click" Background="#FFFFF9F9">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Save" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="682,379,0,0" Width="100" Click="Save_Click" Background="#FFFFF9F9">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
     </Grid>
 </Window>

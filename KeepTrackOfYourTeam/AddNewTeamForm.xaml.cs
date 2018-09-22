@@ -22,6 +22,12 @@ namespace KeepTrackOfYourTeam
         public AddNewTeamForm()
         {
             InitializeComponent();
+            TabIndex = 0;
+            buttonAdddPlayer.TabIndex = TabIndex++;
+            comboBoxPlayers.TabIndex = TabIndex++;
+            TextBoxName.TabIndex = TabIndex++;
+            TextBoxCoach.TabIndex = TabIndex++;
+            TextBoxPoints.TabIndex = TabIndex++;
         }
 
         private void AddAPlayer_Click(object sender, RoutedEventArgs e)
@@ -47,7 +53,11 @@ namespace KeepTrackOfYourTeam
 
         private void AddTeam()
         {
-            if (TextBoxName.Text != string.Empty && TextBoxCoach.Text != string.Empty)
+            if (TextBoxName.Text == string.Empty || TextBoxCoach.Text == string.Empty || TextBoxPoints.Text == string.Empty)
+            {
+                MessageBox.Show("Veld mag niet leeg zijn!", "Velden moeten gevuld zijn", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
             {
                 using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
                 using (var sqlCommand = connection.CreateCommand())
@@ -66,8 +76,6 @@ namespace KeepTrackOfYourTeam
                 MessageBox.Show("Success!", "", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.Close();
             }
-            else
-                MessageBox.Show("Veld mag niet leeg zijn!", "Velden moeten gevuld zijn", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
