@@ -19,6 +19,8 @@ namespace KeepTrackOfYourTeam
     /// </summary>
     public partial class AddAPlayerForm : Window
     {
+        private readonly int _id;
+
         public AddAPlayerForm()
         {
             InitializeComponent();
@@ -50,15 +52,16 @@ namespace KeepTrackOfYourTeam
                 using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
                 using (var sqlCommand = connection.CreateCommand())
                 {
-                    var LastNameParameter = sqlCommand.Parameters.AddWithValue("@LastName", TextBoxLastName.Text);
-                    var AdresParameter = sqlCommand.Parameters.AddWithValue("@Adres", TextBoxAdres.Text);
-                    var CityParameter = sqlCommand.Parameters.AddWithValue("@City", TextBoxCity.Text);
-                    var BirthDateParameter = sqlCommand.Parameters.AddWithValue("@BirthDate", DatePickerBirthDate.Text);
+                    var id = 5;
+                    var lastNameParameter = sqlCommand.Parameters.AddWithValue("@LastName", TextBoxLastName.Text);
+                    var addressParameter = sqlCommand.Parameters.AddWithValue("@Adres", TextBoxAdres.Text);
+                    var cityParameter = sqlCommand.Parameters.AddWithValue("@City", TextBoxCity.Text);
+                    var birthDateParameter = sqlCommand.Parameters.AddWithValue("@BirthDate", DatePickerBirthDate.SelectedDate);
 
                     sqlCommand.CommandText =
                         $@"INSERT INTO [dbo].[Person]
-                    ([LastName], [Adres], [City], [BirthDate])
-                    VALUES ({LastNameParameter.ParameterName}, {AdresParameter.ParameterName}, {CityParameter.ParameterName}, {BirthDateParameter.ParameterName})";
+                    ([PersonId], [LastName], [Adres], [City], [BirthDate])
+                    VALUES ({id}, {lastNameParameter.ParameterName}, {addressParameter.ParameterName}, {cityParameter.ParameterName}, {birthDateParameter.ParameterName})";
                     sqlCommand.ExecuteNonQuery();
                 }
 

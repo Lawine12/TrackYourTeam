@@ -53,11 +53,7 @@ namespace KeepTrackOfYourTeam
 
         private void AddTeam()
         {
-            if (TextBoxName.Text == string.Empty || TextBoxCoach.Text == string.Empty || TextBoxPoints.Text == string.Empty)
-            {
-                MessageBox.Show("Veld mag niet leeg zijn!", "Velden moeten gevuld zijn", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            else
+            if (TextBoxName.Text != string.Empty && TextBoxCoach.Text != string.Empty)
             {
                 using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
                 using (var sqlCommand = connection.CreateCommand())
@@ -76,6 +72,8 @@ namespace KeepTrackOfYourTeam
                 MessageBox.Show("Success!", "", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.Close();
             }
+            else
+                MessageBox.Show("Veld mag niet leeg zijn!", "Velden moeten gevuld zijn", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
