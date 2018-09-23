@@ -23,22 +23,9 @@ namespace KeepTrackOfYourTeam
         {
             InitializeComponent();
             TabIndex = 0;
-            buttonAdddPlayer.TabIndex = TabIndex++;
-            comboBoxPlayers.TabIndex = TabIndex++;
             TextBoxName.TabIndex = TabIndex++;
             TextBoxCoach.TabIndex = TabIndex++;
             TextBoxPoints.TabIndex = TabIndex++;
-        }
-
-        private void AddAPlayer_Click(object sender, RoutedEventArgs e)
-        {
-            var addPlayer = new AddAPlayerForm();
-            addPlayer.ShowDialog();
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
