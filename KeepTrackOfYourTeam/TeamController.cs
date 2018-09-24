@@ -37,7 +37,7 @@ namespace KeepTrackOfYourTeam
         public int TeamId { get; set; }
     }
 
-    public class Person : Team
+    public class Person : Players
     {
         public int Id { get; set; }
 

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\App.xaml
-41711127875
+71827971595
 2621137031
-14-807004271
+17-2038333187
 14-799888181
-AddAPlayerForm.xaml;AddNewTeamForm.xaml;MainWindow.xaml;ViewTeamsForm.xaml;
+AddAPlayerForm.xaml;AddNewTeamForm.xaml;EditPlayerForm.xaml;EditTeamForm.xaml;MainWindow.xaml;ViewPlayersForm.xaml;ViewTeamsForm.xaml;
 
 False
 

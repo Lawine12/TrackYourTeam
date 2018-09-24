@@ -23,6 +23,11 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
+            <Button Content="View players" Height="30" Margin="21,0,0,10" Width="100" Click="ViewPlayers_Click" Background="#FFFFF9F9">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
         </StackPanel>
         <Button Content="Exit" Height="30" HorizontalAlignment="Left" Margin="10,364,0,25" Width="100" Click="Exit_Click" Background="#FFFFF9F9">
             <Button.Effect>

@@ -7,7 +7,7 @@ namespace KeepTrackOfYourTeam
     {
         public static SqlConnection OpenDefaultConnection()
         {
-            var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
+            var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Test"].ConnectionString);
             connection.Open();
             return connection;
         }

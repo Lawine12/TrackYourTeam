@@ -22,3 +22,9 @@ C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\Vi
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\bin\Debug\TrackYourTeamDatabase.mdf
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\bin\Debug\TrackYourTeamDatabase_log.ldf
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam_Content.g.cs
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\ViewPlayersForm.g.cs
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\ViewPlayersForm.baml
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\EditTeamForm.g.cs
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\EditTeamForm.baml
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\EditPlayerForm.g.cs
+C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\EditPlayerForm.baml

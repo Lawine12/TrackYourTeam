@@ -46,13 +46,13 @@ namespace KeepTrackOfYourTeam
                 using (var sqlCommand = connection.CreateCommand())
                 {
                     var teamNameParameter = sqlCommand.Parameters.AddWithValue("@Name", TextBoxName.Text);
-                    var teamCoachParameter = sqlCommand.Parameters.AddWithValue("@CoachId", TextBoxCoach.Text);
-                    var TeamPointsParameter = sqlCommand.Parameters.AddWithValue("@Points", TextBoxPoints.Text);
+                    var teamCoachParameter = sqlCommand.Parameters.AddWithValue("@Coach", TextBoxCoach.Text);
+                    var teamPointsParameter = sqlCommand.Parameters.AddWithValue("@Points", TextBoxPoints.Text);
 
                     sqlCommand.CommandText =
                         $@"INSERT INTO [dbo].[Team]
-                    ([Name], [CoachId], [Points])
-                    VALUES ({teamNameParameter.ParameterName}, {teamCoachParameter.ParameterName}, {TeamPointsParameter.ParameterName})";
+                    ([Name], [Coach], [Points])
+                    VALUES ({teamNameParameter.ParameterName}, {teamCoachParameter.ParameterName}, {teamPointsParameter.ParameterName})";
                     sqlCommand.ExecuteNonQuery();
                 }
 

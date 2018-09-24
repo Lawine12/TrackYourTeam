@@ -47,5 +47,11 @@ namespace KeepTrackOfYourTeam
         {
             this.Close();
         }
+
+        private void ViewPlayers_Click(object sender, RoutedEventArgs e)
+        {
+            var viewPlayers = new ViewPlayersForm();
+            viewPlayers.ShowDialog();
+        }
     }
 }

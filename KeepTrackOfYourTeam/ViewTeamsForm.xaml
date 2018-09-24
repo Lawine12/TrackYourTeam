@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="ViewTeamsForm" Height="450" Width="800">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="327" Margin="51,38,0,0" VerticalAlignment="Top" Width="246"/>
+        <DataGrid Name="dataGridTeams" HorizontalAlignment="Left" Height="327" Margin="51,38,0,0" VerticalAlignment="Top" Width="246" SelectionChanged="dataGridTeams_SelectionChanged"/>
+        <Button HorizontalAlignment="Left" Margin="337,75,0,0" VerticalAlignment="Top" Width="75">
+            <Button Name="buttonAddATeam" Content="Add a Team" Width="75" Click="buttonAddATeam_Click"/>
+        </Button>
+        <Button Name="buttonEditTeam" Content="Edit a Team" HorizontalAlignment="Left" Margin="337,104,0,0" VerticalAlignment="Top" Width="75" Click="buttonEditTeam_Click"/>
+        <Button Name="buttonDeleteTeam" Content="Delete a Team" HorizontalAlignment="Left" Margin="337,129,0,0" VerticalAlignment="Top" Width="75" Click="buttonDeleteTeam_Click"/>
 
     </Grid>
 </Window>

@@ -52,7 +52,7 @@ namespace KeepTrackOfYourTeam
                 using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
                 using (var sqlCommand = connection.CreateCommand())
                 {
-                    var id = 5;
+                    var id = sqlCommand.Parameters.AddWithValue("@id", _id);
                     var lastNameParameter = sqlCommand.Parameters.AddWithValue("@LastName", TextBoxLastName.Text);
                     var addressParameter = sqlCommand.Parameters.AddWithValue("@Adres", TextBoxAdres.Text);
                     var cityParameter = sqlCommand.Parameters.AddWithValue("@City", TextBoxCity.Text);
