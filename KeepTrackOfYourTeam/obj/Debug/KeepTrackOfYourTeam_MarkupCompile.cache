@@ -4,13 +4,18 @@
 winexe
 C#
 .cs
-C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\
+C:\Users\Raymond\source\repos\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\
 KeepTrackOfYourTeam
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\App.xaml
 71827971595
+=======
+C:\Users\Raymond\source\repos\TrackYourTeam\KeepTrackOfYourTeam\App.xaml
+41711127875
+>>>>>>> 7fe3c36389d41c7549b3f9ce70196e3ac33e7d47
 2621137031
 13-182970424
 14-799888181
