@@ -65,8 +65,8 @@ namespace KeepTrackOfYourTeam
                 var editTeam = new EditPlayerForm(id);
                 editTeam.ShowDialog();
                 LoadData();
-                dataGridViewPlayers.IsEnabled = false;
-                dataGridViewPlayers.IsEnabled = false;
+                buttonEditAPlayer.IsEnabled = false;
+                buttonDeleteAPlayer.IsEnabled = false;
             }
         }
 
@@ -104,6 +104,12 @@ namespace KeepTrackOfYourTeam
                     dataAdapter.Update(_teamData);
                 }
             }
+        }
+
+        private void dataGridViewPlayers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            buttonEditAPlayer.IsEnabled = true;
+            buttonDeleteAPlayer.IsEnabled = true;
         }
     }
 }

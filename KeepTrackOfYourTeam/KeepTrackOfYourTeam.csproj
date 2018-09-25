@@ -71,8 +71,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddAPlayerForm.xaml.cs">
-      <DependentUpon>AddAPlayerForm.xaml</DependentUpon>
+    <Compile Include="AddNewPlayerForm.xaml.cs">
+      <DependentUpon>AddNewPlayerForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="AddNewTeamForm.xaml.cs">
       <DependentUpon>AddNewTeamForm.xaml</DependentUpon>
@@ -91,7 +91,7 @@
     <Compile Include="ViewTeamsForm.xaml.cs">
       <DependentUpon>ViewTeamsForm.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddAPlayerForm.xaml">
+    <Page Include="AddNewPlayerForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

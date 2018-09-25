@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KeepTrackOfYourTeam"
         mc:Ignorable="d"
-        Title="EditPlayerForm" Height="450" Width="800">
+        Title="Edit Player" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Margin="182,0,-46,0">
+            <TextBox DockPanel.Dock="Left" x:Name="TextBoxLastName" Height="23" Margin="21,67,515,0" TextWrapping="Wrap" Text="" Width="120"/>
+            <TextBox DockPanel.Dock="Left" x:Name="TextBoxAdres"  Height="23" Margin="21,5,515,0" TextWrapping="Wrap" Text="" Width="120"/>
+            <DatePicker DockPanel.Dock="Left" x:Name="DatePickerBirthDate" Margin="21,5,515,0" Width="120"/>
+            <TextBox DockPanel.Dock="Left" x:Name="TextBoxCity"  Height="23" Margin="21,5,515,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Button DockPanel.Dock="Left" Content="Save" Height="30"  Margin="380,200,0,0" Width="100" Click="Save_Click" Background="#FFFFF9F9">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Width="182">
+            <Label DockPanel.Dock="Left" Content="Last Name" Margin="29,67,86,0"/>
+            <Label DockPanel.Dock="Left" Content="Adres"  Margin="29,0,86,0"/>
+            <Label DockPanel.Dock="Left" Content="Birth date" Margin="29,0,86,0"/>
+            <Label DockPanel.Dock="Left" Content="City" Margin="29,0,86,0"/>
+            <Button DockPanel.Dock="Left" Content="Close" Height="30" Margin="0,200,0,0" Width="100" Click="Close_Click" Background="#FFFFF9F9">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using KeepTrackOfYourTeam.Properties;
 
 namespace KeepTrackOfYourTeam
 {

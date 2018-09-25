@@ -41,7 +41,10 @@ namespace KeepTrackOfYourTeam
             if (teamsData.Rows.Count == 1)
             {
                 var row = _teamInformation.Rows[0];
-                //textboxTeamName.Text = (string)row["TeamName"];
+                TextBoxLastName.Text = (string)row["LastName"];
+                TextBoxAdres.Text = (string)row["Adres"];
+                TextBoxCity.Text = (string)row["City"];
+                DatePickerBirthDate.Text = row["BirthDate"] as string;
             }
         }
 
@@ -57,6 +60,47 @@ namespace KeepTrackOfYourTeam
                 sqlAdapter.Fill(_teamInformation);
             }
             return _teamInformation;
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            EditPlayer();
+            this.Close();
+            LoadData();
+        }
+
+        private void EditPlayer()
+        {
+            if (TextBoxLastName.Text == string.Empty || TextBoxAdres.Text == string.Empty || TextBoxCity.Text == string.Empty || DatePickerBirthDate.Text == string.Empty)
+            {
+                MessageBox.Show("Veld mag niet leeg zijn!", "Velden moeten gevuld zijn", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
+                using (var sqlCommand = connection.CreateCommand())
+                {
+                    var id = sqlCommand.Parameters.AddWithValue("@id", _id);
+                    var lastNameParameter = sqlCommand.Parameters.AddWithValue("@LastName", TextBoxLastName.Text);
+                    var addressParameter = sqlCommand.Parameters.AddWithValue("@Adres", TextBoxAdres.Text);
+                    var cityParameter = sqlCommand.Parameters.AddWithValue("@City", TextBoxCity.Text);
+                    var birthDateParameter = sqlCommand.Parameters.AddWithValue("@BirthDate", DatePickerBirthDate.SelectedDate);
+
+                    sqlCommand.CommandText =
+                        $@"INSERT INTO [dbo].[Person]
+                    ([PersonId], [LastName], [Adres], [City], [BirthDate])
+                    VALUES ({id}, {lastNameParameter.ParameterName}, {addressParameter.ParameterName}, {cityParameter.ParameterName}, {birthDateParameter.ParameterName})";
+                    sqlCommand.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Success!", "", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.Close();
+            }
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

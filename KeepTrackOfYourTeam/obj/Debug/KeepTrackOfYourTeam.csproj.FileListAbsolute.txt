@@ -59,7 +59,6 @@ C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\bi
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\bin\Debug\KeepTrackOfYourTeam.exe
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\bin\Debug\KeepTrackOfYourTeam.pdb
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam.csprojAssemblyReference.cache
-C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\AddAPlayerForm.g.cs
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\AddNewTeamForm.g.cs
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\EditPlayerForm.g.cs
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\EditTeamForm.g.cs
@@ -70,7 +69,6 @@ C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\ob
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam_Content.g.cs
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam_MarkupCompile.cache
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam_MarkupCompile.lref
-C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\AddAPlayerForm.baml
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\AddNewTeamForm.baml
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\EditPlayerForm.baml
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\EditTeamForm.baml
@@ -83,3 +81,5 @@ C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\ob
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam.csproj.CoreCompileInputs.cache
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam.exe
 C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\KeepTrackOfYourTeam.pdb
+C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\AddNewPlayerForm.g.cs
+C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\AddNewPlayerForm.baml

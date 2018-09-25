@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ViewPlayersForm" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="dataGridViewPlayers" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="508" />
+        <DataGrid Name="dataGridViewPlayers" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="508" SelectionChanged="dataGridViewPlayers_SelectionChanged" />
         <Button Name="buttonAddAPlayer" Content="Add A Player" HorizontalAlignment="Left" Margin="585,44,0,0" VerticalAlignment="Top" Width="94" Click="buttonAddAPlayer_Click"/>
         <Button Name="buttonEditAPlayer" Content="Edit A Player" HorizontalAlignment="Left" Margin="585,69,0,0" VerticalAlignment="Top" Width="94" Click="buttonEditAPlayer_Click"/>
         <Button Name="buttonDeleteAPlayer" Content="Delete A Player" HorizontalAlignment="Left" Margin="585,94,0,0" VerticalAlignment="Top" Width="94" Click="buttonDeleteAPlayer_Click"/>

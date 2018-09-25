@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\obj\Debug\
+C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\obj\Debug\
 KeepTrackOfYourTeam
 none
 false
 DEBUG;TRACE
-C:\Users\rkok1\source\repos\KeepTrackOfYourTeam\KeepTrackOfYourTeam\App.xaml
-71827971595
+C:\Users\rkok1\Documents\Visual Studio 2017\TrackYourTeam\KeepTrackOfYourTeam\App.xaml
+7-472122626
 2621137031
-17-2038333187
+17-1926913215
 14-799888181
-AddAPlayerForm.xaml;AddNewTeamForm.xaml;EditPlayerForm.xaml;EditTeamForm.xaml;MainWindow.xaml;ViewPlayersForm.xaml;ViewTeamsForm.xaml;
+AddNewPlayerForm.xaml;AddNewTeamForm.xaml;EditPlayerForm.xaml;EditTeamForm.xaml;MainWindow.xaml;ViewPlayersForm.xaml;ViewTeamsForm.xaml;
 
-False
+True
 
