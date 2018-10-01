@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using KeepTrackOfYourTeam.Properties;
 
 namespace KeepTrackOfYourTeam
@@ -8,6 +9,8 @@ namespace KeepTrackOfYourTeam
     /// </summary>
     public partial class AddNewTeamForm : Window
     {
+        private readonly int _id;
+
         public AddNewTeamForm()
         {
             InitializeComponent();
@@ -24,19 +27,26 @@ namespace KeepTrackOfYourTeam
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            AddTeam();
+            AddTeam(_id);
         }
 
-        private void AddTeam()
+        private void AddTeam(int _id)
         {
+            var team = new Coach();
+            team.Id = _id;
+            team.Name = TextBoxName.Text;
+            team.CoachName = TextBoxCoach.Text;
+            team.Points = Convert.ToInt32(TextBoxPoints.Text);
+
+
             if (TextBoxName.Text != string.Empty && TextBoxCoach.Text != string.Empty)
             {
                 using (var connection = DatabaseConnectionHelper.OpenDefaultConnection())
                 using (var sqlCommand = connection.CreateCommand())
                 {
-                    var teamNameParameter = sqlCommand.Parameters.AddWithValue("@Name", TextBoxName.Text);
-                    var teamCoachParameter = sqlCommand.Parameters.AddWithValue("@Coach", TextBoxCoach.Text);
-                    var teamPointsParameter = sqlCommand.Parameters.AddWithValue("@Points", TextBoxPoints.Text);
+                    var teamNameParameter = sqlCommand.Parameters.AddWithValue("@Name", team.Name);
+                    var teamCoachParameter = sqlCommand.Parameters.AddWithValue("@Coach", team.CoachName);
+                    var teamPointsParameter = sqlCommand.Parameters.AddWithValue("@Points", team.Points);
 
                     sqlCommand.CommandText =
                         $@"INSERT INTO [dbo].[Team]
